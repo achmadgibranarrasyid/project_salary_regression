@@ -15,4 +15,5 @@ years_exp = st.number_input("Masukkan tahun pengalaman kerja:", min_value=0.0, s
 
 if st.button("Prediksi Gaji"):
     prediction = model.predict(np.array([[years_exp]]))[0]
-    st.success(f"Estimasi Gaji: Rp {prediction:,.2f}")
+    st.success(f"Estimasi Gaji: $ {prediction:,.2f}")
+
